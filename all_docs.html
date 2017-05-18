@@ -1,0 +1,614 @@
+
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>All Documents</title>
+
+        <meta name="description" content="AppUI is a Web App Bootstrap Admin Template created by pixelcave and published on Themeforest">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="assets/img/favicon.png">
+        <link rel="apple-touch-icon" href="assets/img/icon57.png" sizes="57x57">
+        <link rel="apple-touch-icon" href="assets/img/icon72.png" sizes="72x72">
+        <link rel="apple-touch-icon" href="assets/img/icon76.png" sizes="76x76">
+        <link rel="apple-touch-icon" href="assets/img/icon114.png" sizes="114x114">
+        <link rel="apple-touch-icon" href="assets/img/icon120.png" sizes="120x120">
+        <link rel="apple-touch-icon" href="assets/img/icon144.png" sizes="144x144">
+        <link rel="apple-touch-icon" href="assets/img/icon152.png" sizes="152x152">
+        <link rel="apple-touch-icon" href="assets/img/icon180.png" sizes="180x180">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/plugins.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/themes.css">
+        <script src="assets/js/vendor/modernizr-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <!-- Page Wrapper -->
+        <div id="page-wrapper" class="page-loading">
+            <!-- Preloader -->
+            <div class="preloader">
+                <div class="inner">
+                    <!-- Animation spinner for all modern browsers -->
+                    <div class="preloader-spinner themed-background hidden-lt-ie10"></div>
+                    <!-- Text for IE9 -->
+                    <h3 class="text-primary visible-lt-ie10"><strong>Loading..</strong></h3>
+                </div>
+            </div>
+            <!-- END Preloader -->
+
+            <!-- Page Container -->
+            <div id="page-container" class="header-fixed-top sidebar-visible-lg-full">
+                <!-- Alternative Sidebar -->
+                <div id="sidebar-alt" tabindex="-1" aria-hidden="true">
+                    <!-- Toggle Alternative Sidebar Button (visible only in static layout) -->
+                    <a href="javascript:void(0)" id="sidebar-alt-close" onclick="App.sidebar('toggle-sidebar-alt');"><i class="fa fa-times"></i></a>
+
+                    <!-- Wrapper for scrolling functionality -->
+                    <div id="sidebar-scroll-alt">
+                        <!-- Sidebar Content -->
+                        <div class="sidebar-content">
+                            <!-- Profile -->
+                            <div class="sidebar-section">
+                                <h2 class="text-light">Profile</h2>
+                                <form action="index.html" method="post" class="form-control-borderless" onsubmit="return false;">
+                                    <div class="form-group">
+                                        <label for="side-profile-name">Name</label>
+                                        <input type="text" id="side-profile-name" name="side-profile-name" class="form-control" value="John Doe">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="side-profile-email">Email</label>
+                                        <input type="email" id="side-profile-email" name="side-profile-email" class="form-control" value="john.doe@example.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="side-profile-password">New Password</label>
+                                        <input type="password" id="side-profile-password" name="side-profile-password" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="side-profile-password-confirm">Confirm New Password</label>
+                                        <input type="password" id="side-profile-password-confirm" name="side-profile-password-confirm" class="form-control">
+                                    </div>
+                                    <div class="form-group remove-margin">
+                                        <button type="submit" class="btn btn-effect-ripple btn-primary" onclick="App.sidebar('close-sidebar-alt');">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- END Profile -->
+                        </div>
+                        <!-- END Sidebar Content -->
+                    </div>
+                    <!-- END Wrapper for scrolling functionality -->
+                </div>
+                <!-- END Alternative Sidebar -->
+
+                <!-- Main Sidebar -->
+                <div id="sidebar">
+                    <!-- Sidebar Brand -->
+                    <div id="sidebar-brand" class="themed-background">
+                        <a href="index.html" class="sidebar-title">
+                            <i class="fa fa-cube"></i> 
+                            <span class="sidebar-nav-mini-hide">
+                                <strong>Document</strong>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- END Sidebar Brand -->
+
+                    <!-- Wrapper for scrolling functionality -->
+                    <div id="sidebar-scroll">
+                        <!-- Sidebar Content -->
+                        <div class="sidebar-content">
+                            <!-- Sidebar Navigation -->
+                            <ul class="sidebar-nav">
+                                <li>
+                                    <a href="index.html"><i class="gi gi-compass sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+                                </li>
+                                
+                                <li>
+                                    <a href="manage_doc.html">
+                                        <i class="gi gi-picture sidebar-nav-icon"></i>
+                                        <span class="sidebar-nav-mini-hide">
+                                            Manage Document
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="all_docs.html" class="active">
+                                        <i class="gi gi-picture sidebar-nav-icon"></i>
+                                        <span class="sidebar-nav-mini-hide">
+                                            All Doccuments
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="manage_user.html">
+                                        <i class="gi gi-user sidebar-nav-icon"></i>
+                                        <span class="sidebar-nav-mini-hide">
+                                            Manage Users
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- END Sidebar Navigation -->
+
+                        </div>
+                        <!-- END Sidebar Content -->
+                    </div>
+                    <!-- END Wrapper for scrolling functionality -->
+                </div>
+                <!-- END Main Sidebar -->
+
+                <!-- Main Container -->
+                <div id="main-container">
+                    <!-- Header -->
+                    <header class="navbar navbar-inverse navbar-fixed-top">
+                        <!-- Left Header Navigation -->
+                        <ul class="nav navbar-nav-custom">
+                            <!-- Main Sidebar Toggle Button -->
+                            <li>
+                                <a href="javascript:void(0)" onclick="App.sidebar('toggle-sidebar');this.blur();">
+                                    <i class="fa fa-ellipsis-v fa-fw animation-fadeInRight" id="sidebar-toggle-mini"></i>
+                                    <i class="fa fa-bars fa-fw animation-fadeInRight" id="sidebar-toggle-full"></i>
+                                </a>
+                            </li>
+                            <!-- END Main Sidebar Toggle Button -->
+
+                            <!-- Header Link -->
+                            <li class="hidden-xs animation-fadeInQuick">
+                                <a href=""><strong>All Documents</strong></a>
+                            </li>
+                            <!-- END Header Link -->
+                        </ul>
+                        <!-- END Left Header Navigation -->
+
+                        <!-- Right Header Navigation -->
+                        <ul class="nav navbar-nav-custom pull-right">
+                            <!-- Search Form -->
+                            <li>
+                                <form action="page_ready_search_results.html" method="post" class="navbar-form-custom">
+                                    <input type="text" id="top-search" name="top-search" class="form-control" placeholder="Search..">
+                                </form>
+                            </li>
+                            <!-- END Search Form -->
+
+                            <!-- Alternative Sidebar Toggle Button -->
+                            <li>
+                                <a href="javascript:void(0)" onclick="App.sidebar('toggle-sidebar-alt');this.blur();">
+                                    <i class="gi gi-settings"></i>
+                                </a>
+                            </li>
+                            <!-- END Alternative Sidebar Toggle Button -->
+
+                            <!-- User Dropdown -->
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="assets/img/placeholders/avatars/avatar9.jpg" alt="avatar">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="dropdown-header">
+                                        <strong>ADMINISTRATOR</strong>
+                                    </li>
+                                    <li>
+                                        <a href="page_app_social.html">
+                                            <i class="fa fa-pencil-square fa-fw pull-right"></i>
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="page_app_media.html">
+                                            <i class="fa fa-picture-o fa-fw pull-right"></i>
+                                            Media Manager
+                                        </a>
+                                    </li>
+                                    <li class="divider"><li>
+                                    <li>
+                                        <a href="javascript:void(0)" onclick="App.sidebar('toggle-sidebar-alt');">
+                                            <i class="gi gi-settings fa-fw pull-right"></i>
+                                            Settings
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="fa fa-power-off fa-fw pull-right"></i>
+                                            Log out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END User Dropdown -->
+                        </ul>
+                        <!-- END Right Header Navigation -->
+                    </header>
+                    <!-- END Header -->
+
+                    <!-- Page content -->
+                   
+                    <div id="page-content" class="inner-sidebar-left">
+                        <!-- Inner Sidebar -->
+                        <div id="page-content-sidebar">
+                            <!-- Collapsible Options -->
+                            <a href="javascript:void(0)" class="btn btn-block btn-default visible-xs" data-toggle="collapse" data-target="#media-options">Media Box</a>
+                            <div id="media-options" class="collapse navbar-collapse remove-padding">
+                                <!-- Filter -->
+                                <div class="block-section">
+                                    <h4 class="inner-sidebar-header">
+                                        Filter
+                                    </h4>
+                                    <!-- Filter by Type links -->
+                                    
+                                    <ul class="nav nav-pills nav-stacked nav-icons media-filter">
+                                        <li class="active">
+                                            <a href="javascript:void(0)" data-category="all">
+                                                <i class="fa fa-fw fa-folder text-primary icon-push"></i> <strong>All</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" data-category="video">
+                                                <i class="fa fa-fw fa-folder text-danger icon-push"></i> <strong>Videos</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" data-category="image">
+                                                <i class="fa fa-fw fa-folder text-success icon-push"></i> <strong>Images</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" data-category="audio">
+                                                <i class="fa fa-fw fa-folder text-info icon-push"></i> <strong>Audio</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" data-category="pdf">
+                                                <i class="fa fa-fw fa-folder text-warning icon-push"></i> <strong>Pdf</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" data-category="zip">
+                                                <i class="fa fa-fw fa-folder text-muted icon-push"></i> <strong>Zip</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- END Filter by Type links -->
+                                </div>
+                                <!-- END Filter -->
+                                <div class="block-section">
+                                    <h4 class="inner-sidebar-header">
+                                        User   
+                                    </h4>
+                                    <select id="example-chosen-multiple" name="example-chosen-multiple" class="select-chosen" data-placeholder="Chọn người dùng.." style="width: 250px;" multiple>
+                                        <option value="United States">United States</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Aland Islands">Aland Islands</option>
+                                        <option value="Albania">Albania</option>
+                                        <option value="Algeria">Algeria</option>
+                                        <option value="American Samoa">American Samoa</option>
+                                        <option value="Andorra">Andorra</option>
+                                        <option value="Angola">Angola</option>
+                                        <option value="Anguilla">Anguilla</option>
+                                        <option value="Antarctica">Antarctica</option>
+                                        <option value="Argentina">Argentina</option>
+                                        <option value="Armenia">Armenia</option>
+                                        <option value="Aruba">Aruba</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="Austria">Austria</option>
+                                        <option value="Azerbaijan">Azerbaijan</option>
+                                        <option value="Bahamas">Bahamas</option>
+                                        <option value="Bahrain">Bahrain</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="Barbados">Barbados</option>
+                                        <option value="Belarus">Belarus</option>
+                                        <option value="Belgium">Belgium</option>
+                                        <option value="Belize">Belize</option>
+                                        <option value="Benin">Benin</option>
+                                        <option value="Bermuda">Bermuda</option>
+                                        <option value="Bhutan">Bhutan</option>
+                                        <option value="Botswana">Botswana</option>
+                                        <option value="Bouvet Island">Bouvet Island</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                        <option value="Bulgaria">Bulgaria</option>
+                                        <option value="Burkina Faso">Burkina Faso</option>
+                                        <option value="Burundi">Burundi</option>
+                                        <option value="Cambodia">Cambodia</option>
+                                        <option value="Cameroon">Cameroon</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Cape Verde">Cape Verde</option>
+                                        <option value="Cayman Islands">Cayman Islands</option>
+                                        <option value="Chad">Chad</option>
+                                        <option value="Chile">Chile</option>
+                                        <option value="China">China</option>
+                                        <option value="Christmas Island">Christmas Island</option>
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Comoros">Comoros</option>
+                                        <option value="Congo">Congo</option>
+                                        <option value="Cook Islands">Cook Islands</option>
+                                        <option value="Costa Rica">Costa Rica</option>
+                                        <option value="Cote D'ivoire">Cote D'ivoire</option>
+                                        <option value="Croatia">Croatia</option>
+                                        <option value="Cuba">Cuba</option>
+                                        <option value="Curacao">Curacao</option>
+                                    </select>
+
+                                </div>
+                                <!-- END Upload New File -->
+                            </div>
+                            <!-- END Collapsible Options -->
+                        </div>
+                        <!-- END Inner Sidebar -->
+
+                        <!-- Media Box Content -->
+                        <!-- Add the category value for each item in its data-category attribute (for the filter functionality to work) -->
+                        <div class="row media-filter-items">
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="zip">
+                                    <div class="media-items-options text-right">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-archive-o fa-5x text-muted"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Project</strong>.zip<br>
+                                        <small>3 hours ago, 3.2MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="image">
+                                    <div class="media-items-options text-right">
+                                        <a href="assets/img/placeholders/photos/photo1.jpg" class="btn btn-xs btn-info" data-toggle="lightbox-image">View</a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-picture-o fa-5x text-success"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Mountains</strong>.jpg<br>
+                                        <small>4 hours ago, 7.5MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="video">
+                                    <div class="media-items-options text-right">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-video-o fa-5x text-danger"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Trip</strong>.mov<br>
+                                        <small>7 hours ago, 120MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="image">
+                                    <div class="media-items-options text-right">
+                                        <a href="assets/img/placeholders/photos/photo2.jpg" class="btn btn-xs btn-info" data-toggle="lightbox-image">View</a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-picture-o fa-5x text-success"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Pizza</strong>.jpg<br>
+                                        <small>8 hours ago, 3.9MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="zip">
+                                    <div class="media-items-options text-right">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-archive-o fa-5x text-muted"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Freebies</strong>.zip<br>
+                                        <small>9 hours ago, 56.2MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="audio">
+                                    <div class="media-items-options text-right">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-audio-o fa-5x text-info"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Classical</strong>.mp3<br>
+                                        <small>11 hours ago, 3.3MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="image">
+                                    <div class="media-items-options text-right">
+                                        <a href="assets/img/placeholders/photos/photo7.jpg" class="btn btn-xs btn-info" data-toggle="lightbox-image">View</a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-picture-o fa-5x text-success"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Road</strong>.jpg<br>
+                                        <small>12 hours ago, 4.4MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="zip">
+                                    <div class="media-items-options text-right">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-archive-o fa-5x text-muted"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>FileArchive</strong>.zip<br>
+                                        <small>1 day ago, 530MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="image">
+                                    <div class="media-items-options text-right">
+                                        <a href="assets/img/placeholders/photos/photo3.jpg" class="btn btn-xs btn-info" data-toggle="lightbox-image">View</a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-picture-o fa-5x text-success"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Nature</strong>.jpg<br>
+                                        <small>1 day ago, 6.2MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="video">
+                                    <div class="media-items-options text-right">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-video-o fa-5x text-danger"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Rollercoaster</strong>.mov<br>
+                                        <small>2 days ago, 260MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="video">
+                                    <div class="media-items-options text-right">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-video-o fa-5x text-danger"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Sunset</strong>.mov<br>
+                                        <small>3 days ago, 76.9MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="pdf">
+                                    <div class="media-items-options text-right">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-pdf-o fa-5x text-warning"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Guide</strong>.pdf<br>
+                                        <small>4 days ago, 7.3MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="audio">
+                                    <div class="media-items-options text-right">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-audio-o fa-5x text-info"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Soundtrack</strong>.mp3<br>
+                                        <small>1 week ago</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="pdf">
+                                    <div class="media-items-options text-right">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-pdf-o fa-5x text-warning"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Tutorial</strong>.pdf<br>
+                                        <small>2 weeks ago, 9.1MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="audio">
+                                    <div class="media-items-options text-right">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-audio-o fa-5x text-info"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Effect</strong>.wav<br>
+                                        <small>3 weeks ago, 250KB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-lg-3">
+                                <div class="media-items animation-fadeInQuick2" data-category="zip">
+                                    <div class="media-items-options text-right">
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <div class="media-items-content">
+                                        <i class="fa fa-file-archive-o fa-5x text-muted"></i>
+                                    </div>
+                                    <h4>
+                                        <strong>Backup</strong>.zip<br>
+                                        <small>3 weeks ago, 14.9MB</small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Media Box Content -->
+                    </div>
+                    <!-- END Page Content -->
+                </div>
+                <!-- END Main Container -->
+            </div>
+            <!-- END Page Container -->
+        </div>
+        <!-- END Page Wrapper -->
+        <!-- jQuery, Bootstrap, jQuery plugins and Custom JS code -->
+        <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- Load and execute javascript code used only in this page -->
+        <script src="assets/js/pages/appMedia.js"></script>
+        <script>$(function(){ AppMedia.init(); });</script>
+    </body>
+</html>
